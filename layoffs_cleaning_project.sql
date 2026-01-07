@@ -1,3 +1,5 @@
+-- This project focuses on data cleaning techniques.
+-- Data modification queries were executed on staging tables only.
 USE cleaning_data;
 
 -- Creating temporary datasets
