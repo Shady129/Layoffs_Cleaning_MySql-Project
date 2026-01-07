@@ -63,4 +63,7 @@ All UPDATE, DELETE, and ALTER TABLE operations were performed on staging tables 
 
 ---
 
-## 📂 Project Structure
+
+## 👤 Author
+**Shady Mahmoud**  
+Aspiring Data Analyst | SQL & Data Cleaning
