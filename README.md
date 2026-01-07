@@ -1,37 +1,66 @@
-# 📊 Layoffs Data Cleaning Project (MySQL)
+# 🧹 Layoffs Data Cleaning Project – SQL (MySQL)
 
-This project focuses on cleaning and preparing the global layoffs dataset using MySQL.  
-The goal is to remove duplicates, fix inconsistent values, standardize text fields, clean date formats, handle NULL values, and produce a final dataset ready for analysis.
+🔍 **SQL Data Cleaning | Portfolio Project**
 
----
-
-## 🚀 Project Overview
-
-This project demonstrates practical SQL data-cleaning techniques, including:
-
-- 🔁 Removing duplicated records  
-- 🧹 Standardizing company names, industries, locations, and countries  
-- 📅 Converting text-based dates into proper DATE format  
-- ❗ Handling NULL values  
-- 🗂️ Creating staging and clean tables  
-- 📦 Producing a final clean dataset  
+This project focuses on cleaning and preparing a real-world layoffs dataset using SQL (MySQL).  
+The objective is to transform raw, inconsistent data into a clean and analysis-ready dataset by applying professional data cleaning techniques commonly used in real analytics workflows.
 
 ---
 
-## 🛠️ Technologies Used
-
-- 🐬 MySQL 8+  
-- 🪜 Window functions  
-- 🧱 Common Table Expressions (CTEs)  
-- ✏️ String standardization  
-- 🔄 Date conversion  
-- 🔗 SQL joins  
+## 🎯 Project Objective
+To clean and standardize layoffs data by removing duplicates, fixing inconsistencies, handling NULL values, and preparing the dataset for accurate analysis.
 
 ---
 
-## 🧹 Data Cleaning Steps
+## 🗂️ Dataset Overview
+The dataset contains global company layoff information, including:
+- 🏢 Company
+- 📍 Location
+- 🏭 Industry
+- 👥 Total Laid Off
+- 📉 Percentage Laid Off
+- 📅 Date
+- 🚀 Company Stage
+- 🌍 Country
+- 💰 Funds Raised (Millions)
 
-### 1️⃣ Create a staging table
-```sql
-CREATE TABLE layoffs_staging LIKE layoffs;
-INSERT INTO layoffs_staging SELECT * FROM layoffs;
+---
+
+## 🛠️ Tools & Technologies
+- 🟦 MySQL 8
+- 📐 SQL
+- 🧮 Window Functions (ROW_NUMBER)
+- 🔄 JOINs
+- 🧹 Data Cleaning & Standardization
+- 🗃️ Staging Tables
+
+---
+
+## 📌 Data Cleaning Steps Performed
+✔️ Created staging tables to preserve raw data  
+✔️ Identified and removed duplicate records using `ROW_NUMBER()`  
+✔️ Standardized text fields (company names, industries, locations, countries)  
+✔️ Cleaned and unified inconsistent values (Crypto, city and country names)  
+✔️ Converted date fields to proper DATE format  
+✔️ Handled NULL values using self-joins and targeted updates  
+✔️ Removed rows with insufficient layoff information  
+✔️ Dropped helper columns after cleaning process completion  
+
+---
+
+## ⚠️ Data Modification Notice
+All UPDATE, DELETE, and ALTER TABLE operations were performed on staging tables only and were used strictly for learning and portfolio demonstration purposes.
+
+---
+
+## 🧠 Skills Demonstrated
+✔️ Real-world data cleaning using SQL  
+✔️ Duplicate detection and removal  
+✔️ Data standardization and normalization  
+✔️ NULL handling strategies  
+✔️ Use of window functions and joins  
+✔️ Writing clean, readable, and maintainable SQL scripts  
+
+---
+
+## 📂 Project Structure
