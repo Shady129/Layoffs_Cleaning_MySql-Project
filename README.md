@@ -1,69 +1,64 @@
-# 🧹 Layoffs Data Cleaning Project – SQL (MySQL)
+# 🚗 Vehicle Database Analytics Project – SQL (SQL Server)
 
-🔍 **SQL Data Cleaning | Portfolio Project**
+🔍 SQL Data Analysis | Portfolio Project
 
-This project focuses on cleaning and preparing a real-world layoffs dataset using SQL (MySQL).  
-The objective is to transform raw, inconsistent data into a clean and analysis-ready dataset by applying professional data cleaning techniques commonly used in real analytics workflows.
+This project focuses on analyzing a large-scale relational vehicle database using Microsoft SQL Server.
+The objective is to extract meaningful business insights from vehicle manufacturing data by applying professional SQL analysis techniques commonly used in real analytics workflows.
 
 ---
 
 ## 🎯 Project Objective
-To clean and standardize layoffs data by removing duplicates, fixing inconsistencies, handling NULL values, and preparing the dataset for accurate analysis.
+To analyze vehicle manufacturing data and answer real-world business questions related to production trends, engine specifications, fuel types, drive systems, and vehicle configurations using advanced SQL queries.
 
 ---
 
 ## 🗂️ Dataset Overview
-The dataset contains global company layoff information, including:
-- 🏢 Company
-- 📍 Location
-- 🏭 Industry
-- 👥 Total Laid Off
-- 📉 Percentage Laid Off
-- 📅 Date
-- 🚀 Company Stage
-- 🌍 Country
-- 💰 Funds Raised (Millions)
+The database contains detailed automotive information, including:
+- 🏭 Vehicle Manufacturer (Make)
+- 🚘 Vehicle Model and SubModel
+- 🧩 Body Type
+- ⚙️ Engine Specifications (CC, Cylinders, Liter)
+- ⛽ Fuel Type
+- 🚙 Drive Type (FWD, RWD, AWD)
+- 🚪 Number of Doors
+- 📅 Manufacturing Year
 
 ---
 
 ## 🛠️ Tools & Technologies
-- 🟦 MySQL 8
-- 📐 SQL
-- 🧮 Window Functions (ROW_NUMBER)
+- 🟦 Microsoft SQL Server
+- 📐 T-SQL
 - 🔄 JOINs
-- 🧹 Data Cleaning & Standardization
-- 🗃️ Staging Tables
+- 📊 Aggregations
+- 🧮 Subqueries
+- 🧠 CASE WHEN Logic
 
 ---
 
-## 📌 Data Cleaning Steps Performed
-✔️ Created staging tables to preserve raw data  
-✔️ Identified and removed duplicate records using `ROW_NUMBER()`  
-✔️ Standardized text fields (company names, industries, locations, countries)  
-✔️ Cleaned and unified inconsistent values (Crypto, city and country names)  
-✔️ Converted date fields to proper DATE format  
-✔️ Handled NULL values using self-joins and targeted updates  
-✔️ Removed rows with insufficient layoff information  
-✔️ Dropped helper columns after cleaning process completion  
-
----
-
-## ⚠️ Data Modification Notice
-All UPDATE, DELETE, and ALTER TABLE operations were performed on staging tables only and were used strictly for learning and portfolio demonstration purposes.
+## 📌 Analysis Steps Performed
+✔️ Joined multiple relational tables to build a unified vehicle dataset  
+✔️ Analyzed vehicle production between specific year ranges  
+✔️ Identified top manufacturers by production volume  
+✔️ Analyzed engine capacity distribution and averages  
+✔️ Compared vehicles above and below average engine size  
+✔️ Calculated vehicle age dynamically  
+✔️ Analyzed fuel types and drive systems per manufacturer  
+✔️ Handled missing data such as unspecified number of doors  
+✔️ Applied rule-based logic for engine tax calculation  
+✔️ Ranked manufacturers and engine capacities using TOP and ORDER BY  
 
 ---
 
 ## 🧠 Skills Demonstrated
-✔️ Real-world data cleaning using SQL  
-✔️ Duplicate detection and removal  
-✔️ Data standardization and normalization  
-✔️ NULL handling strategies  
-✔️ Use of window functions and joins  
-✔️ Writing clean, readable, and maintainable SQL scripts  
+✔️ Advanced SQL querying and relational thinking  
+✔️ Data aggregation and grouping  
+✔️ Business-driven analytical queries  
+✔️ Subquery-based filtering and comparison  
+✔️ Conditional logic and calculated fields  
+✔️ Writing clean, readable, and structured SQL scripts  
 
 ---
 
-
 ## 👤 Author
-**Shady Mahmoud**  
-Aspiring Data Analyst | SQL & Data Cleaning
+Shady Mahmoud  
+Aspiring Data Analyst | SQL & Data Analysis
